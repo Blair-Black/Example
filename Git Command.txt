@@ -11,3 +11,6 @@ git clone
 取出服务器的仓库的代码到本地建立的目录中（与服务器交互） 
 通过git clone获取远端git库后，.git/config中的开发者信息不会被一起clone过来。仍然需要为本地库的.git/config文件添加开发者信息。此外，开发者还需要自己添加. gitignore文件。 通过git clone获取的远端git库，只包含了远端git库的当前工作分支。
 Eg：git clone https://github.com/git/git   ?下载最新的GitHub开发版本到本地指定的目录（执行这条命令的目录）。
+
+
+generate personal access token-->add token
