@@ -1,0 +1,13 @@
+git pull
+从服务器的仓库中获取代码，和本地代码合并。（与服务器交互，从服务器上下载最新代码，等同于： Git fetch + Git merge） 。。从其它的版本库（既可以是远程的也可以是本地的）将代码更新到本地，例如：“git pull origin master ”就是将origin这个版本库的代码更新到本地的master主分支。   
+
+
+git fetch
+从服务器的仓库中下载代码。（与服务器交互，从服务器上下载最新代码） ，相当于从远程获取最新版本到本地，不会自动merge，比Git pull更安全些。 
+例如：如果使用git checkout nov/eclair_rocket （nov/eclair_rocket为服务器上的分支名），则是获取上次使用git fetch命令时从服务器上下载的代码；如果先使用 git fetch ，再使用git checkout nov/eclair_rocket，则是先从服务器上获取最新的更新信息，然后从服务器上下载最新的代码。
+
+
+git clone 
+取出服务器的仓库的代码到本地建立的目录中（与服务器交互） 
+通过git clone获取远端git库后，.git/config中的开发者信息不会被一起clone过来。仍然需要为本地库的.git/config文件添加开发者信息。此外，开发者还需要自己添加. gitignore文件。 通过git clone获取的远端git库，只包含了远端git库的当前工作分支。
+Eg：git clone https://github.com/git/git   ?下载最新的GitHub开发版本到本地指定的目录（执行这条命令的目录）。
